@@ -39,7 +39,7 @@ spec:
           name: nginxconfigmap 
       containers:
       - name: nginxhttps
-        image: nginx:1.17.10
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         ports:
         - name: https
           containerPort: 443
