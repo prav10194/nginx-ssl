@@ -30,7 +30,6 @@ spec:
       labels:
         app: nginx
     spec:
-      serviceAccountName: zap-matt-2-owaspzap
       volumes:
       - name: secret-volume
         secret:
